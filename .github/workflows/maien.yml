@@ -71,6 +71,7 @@ jobs:
               Start-Sleep -Seconds 5
               $retries++
           }
+         
           if (-not $tsIP) {
               Write-Error "Tailscale IP not assigned. Exiting."
               exit 1
